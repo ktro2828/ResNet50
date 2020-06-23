@@ -4,4 +4,4 @@ ResNet50 with dropout module
 - default dataset : CIFAR10
 
 # Pyline-notify
-I'm using pyline-notify: [site][https://github.com/iory/pyline-notify]
+I'm using pyline-notify: https://github.com/iory/pyline-notify
