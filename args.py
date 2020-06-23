@@ -4,6 +4,7 @@ import os
 
 import argparse
 
+
 def argument_parser():
     parser = argparse.Argumentparser(formatter_class=argparse.ArgumentDefaultHelpFormatter)
 
