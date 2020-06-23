@@ -7,6 +7,8 @@ import torchvision.datasets as datasets
 import torchvision.transforms as transforms
 
 def load_cifar10(batch=128):
+    """Load CIFAR10
+    """
     train_loader = DataLoader(
         datasets.CIFAR10('./',
                         train=True,
