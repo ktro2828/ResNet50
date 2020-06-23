@@ -3,6 +3,7 @@
 import matplotlib.pyplot as plt
 import torch.nn as nn
 
+
 def cal_loss(output, label):
     crietion = nn.NLLLoss()
     return crietion(output, label)
