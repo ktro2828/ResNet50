@@ -7,6 +7,13 @@ import torch.optim as optimizers
 import torchvision.transforms as transforms
 
 class Resnet50(nn.Module):
+    """ResNet50 with Dropout
+
+    Parameters
+    ----------
+        output_dim : int
+            the dimention of output
+    """
     def __init__(self, output_dim):
         super(Resnet50, self).__init__()
 
@@ -64,6 +71,17 @@ class Resnet50(nn.Module):
         return Block(channel_in, channel_out)
 
 class Block(nn.Module):
+    """Basic block of ResNet50
+
+    Parameters
+    ----------
+        channel_in : int
+            the channel's dimention at input
+        channel_out : int
+            the channel's dimention at output
+        drop_rate : float: [0,1]
+            the ratio of dropout
+    """
     def __init__(self, channel_in, channel_out, drop_rate=0.3):
         super().__init__()
 
