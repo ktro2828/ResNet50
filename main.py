@@ -119,3 +119,6 @@ def test(model, optimizer, test_dl, epoch, history):
 
         history['test_loss'].append(test_loss)
         history['test_acc'].append(test_acc)
+
+if __name__ == '__main__':
+    main()
