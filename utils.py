@@ -5,8 +5,8 @@ import torch.nn as nn
 
 
 def cal_loss(output, label):
-    crietion = nn.NLLLoss()
-    return crietion(output, label)
+    criterion = nn.NLLLoss()
+    return criterion(output, label)
 
 def plot_result(history):
     fig, (ax1, ax2) = plt.subplots(ncols=2, figsize=(10, 4))
