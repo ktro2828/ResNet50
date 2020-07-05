@@ -12,9 +12,9 @@ def load_cifar10(batch=128):
     train_loader = DataLoader(
         datasets.CIFAR10('./',
                         train=True,
-                        dowanload=True,
+                        download=True,
                         transform=transforms.Compose([
-                                                    transforms.RandomHorizontialFlip(p=0.5),
+                                                    transforms.RandomHorizontalFlip(p=0.5),
                                                     transforms.RandomAffine(degree=0.2, scale=(0.8, 1.2)),
                                                     transforms.ToTensor(),
                                                     transforms.Normalize(
